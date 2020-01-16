@@ -20,9 +20,49 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "QtiSystemService",
+	owner: "meizu",
+	apk: "proprietary/app/QtiSystemService/QtiSystemService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "meizu",
 	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "embms",
+	owner: "meizu",
+	apk: "proprietary/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "meizu",
+	apk: "proprietary/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "uceShimService",
+	owner: "meizu",
+	apk: "proprietary/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
