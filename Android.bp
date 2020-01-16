@@ -30,6 +30,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "imssettings",
+	owner: "meizu",
+	apk: "proprietary/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "ims",
 	owner: "meizu",
 	apk: "proprietary/priv-app/ims/ims.apk",
